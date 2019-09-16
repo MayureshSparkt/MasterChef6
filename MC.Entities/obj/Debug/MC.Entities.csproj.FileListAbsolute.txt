@@ -1,0 +1,6 @@
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\bin\Debug\MC.Entities.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\bin\Debug\MC.Entities.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\obj\Debug\MC.Entities.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\obj\Debug\MC.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\obj\Debug\MC.Entities.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.Entities\obj\Debug\MC.Entities.pdb

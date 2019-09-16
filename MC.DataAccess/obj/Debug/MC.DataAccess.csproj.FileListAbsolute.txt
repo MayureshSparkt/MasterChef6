@@ -1,0 +1,9 @@
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.DataAccess.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.DataAccess.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.Entities.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.Entities.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csproj.CopyComplete

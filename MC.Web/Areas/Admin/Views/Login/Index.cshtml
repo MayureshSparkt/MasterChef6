@@ -1,0 +1,85 @@
+﻿@using System.Web.Optimization;
+@model MC.Entities.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<!--Faceboo meta card-->
+<link rel="canonical" href="http://loremipsum.com/" />
+@*<link rel="apple-touch-icon" sizes="57x57" href="Content/Admin/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Content/Admin/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Content/Admin/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Content/Admin/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Content/Admin/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Content/Admin/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Content/Admin/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Content/Admin/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Content/Admin/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Content/Admin/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Content/Admin/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Content/Admin/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Content/Admin/images/favicons/favicon-16x16.png">*@
+<link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon/ms-icon-144x144.png">
+<link rel="manifest" href="~/Content/Admin/images/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="~/Content/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>Login</title>
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@*<link type="text/css" rel="stylesheet" media="screen,projection" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="css/style.css" />*@
+@Styles.Render("~/Content/admincss")
+
+<div class="videotint" style="background: rgba(0,0,0,0.20)"></div>
+<video id="bgvid" poster="/Content/Admin/images/preview.jpg" autoplay loop muted playsinline>
+    <!--<source src="media/bg.mp4" type="video/mp4" onerror="fallback(parentNode)">-->
+    <!-- <source src="media/bg.webm" type="video/webm"  >-->
+    <img src="/Content/Admin/images/preview.jpg" alt="" />
+</video>
+<main class="login-page valign-wrapper  ">
+    <div class="login-wrapp">
+        <div class="card">
+            <div class="row" style="margin-bottom: 0">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "input-field col s12" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <form class="col s12">
+                        @* <div class="logo"><a href="#"><img src="/Content/Admin/images/piramal-foundation.png" class="responsive-img" alt="" /></a></div>*@
+                        <div class="row">
+                            <div class="input-field col s12">
+                                @Html.TextBoxFor(m => m.Username, new { @class = "validate" })
+                                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger loginerror" })
+                                @Html.LabelFor(m => m.Username, "User Name*")
+                            </div>
+                            <div class="input-field col s12">
+                                @Html.PasswordFor(m => m.Password, new { @class = "validate" })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger loginerror" })
+                                @Html.LabelFor(m => m.Password, "Password*")
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <button class="btn red waves-effect waves-light" type="submit" name="action">Login</button>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</main>
+
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Scripts/materialize.min.js"></script>
+<script>
+    function fallback(video) {
+        var img = video.querySelector('img');
+        if (img)
+            video.parentNode.replaceChild(img, video);
+    }</script>
+

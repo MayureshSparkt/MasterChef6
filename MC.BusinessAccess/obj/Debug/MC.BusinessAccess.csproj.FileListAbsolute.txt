@@ -1,0 +1,14 @@
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.BusinessAccess.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.BusinessAccess.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\Autofac.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\Autofac.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\Autofac.xml
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\obj\Debug\MC.BusinessAccess.csprojAssemblyReference.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\obj\Debug\MC.BusinessAccess.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\obj\Debug\MC.BusinessAccess.csproj.CopyComplete
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\obj\Debug\MC.BusinessAccess.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\obj\Debug\MC.BusinessAccess.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.DataAccess.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Entities.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.DataAccess.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Entities.pdb

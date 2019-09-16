@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+    <!--Faceboo meta card-->
+    <link rel="canonical" href="http://loremipsum.com/" />
+    @*<link rel="apple-touch-icon" sizes="57x57" href="~/Content/Admin/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="~/Content/Admin/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="~/Content/Admin/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="~/Content/Admin/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="~/Content/Admin/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="~/Content/Admin/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="~/Content/Admin/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="~/Content/Admin/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="~/Content/Admin/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="~/Content/Admin/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="~/Content/Admin/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="~/Content/Admin/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="~/Content/Admin/images/favicons/favicon-16x16.png">*@
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon/ms-icon-144x144.png">
+
+    <link rel="manifest" href="~/Content/Admin/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Content/Admin/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>@ViewBag.Title</title>
+    <!-- CSS -->
+    @RenderSection("Contents", false)
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    @Styles.Render("~/Content/admincss")
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Scripts/materialize.min.js"></script>
+    <script src="~/Content/plugins/malihu-custom-scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    @*<script src="~/Scripts/admin/adminFunction.js"></script>*@
+    <script src="~/Areas/Scripts/Custom/commonHelper.js"></script>
+
+
+</head>
+<body>
+
+    <header class="navbar-fixed">
+        <nav class="red ">
+            <div class="nav-wrapper">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="javascript:window.location.reload();" class="waves-effect waves-light"><i class="material-icons ">refresh</i></a></li>
+                    <li>
+                        <a href="#!user" class="dropdown-button waves-effect waves-light " data-activates="account"> <i class="large  material-icons">account_circle</i></a>
+                        <ul id="account" class="dropdown-content">
+                            <li><a href="@Url.Action("Logout","Login")"> <i class="fa fa-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        @{
+            Html.RenderPartial("_AdminMenus");
+          
+                }
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <div id="loader">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+
+

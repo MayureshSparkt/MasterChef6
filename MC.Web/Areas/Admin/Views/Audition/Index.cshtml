@@ -1,0 +1,188 @@
+﻿@model MC.Web.Areas.Admin.Models.AuditionViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@section Scripts{
+    <script src="~/Content/plugins/jquery-datatable/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="~/Content/plugins/drag-arrange/drag-arrange.js"></script>
+    <script src="~/Areas/Scripts/Custom/AuditionManager.js"></script>
+}
+
+<main class="location-manager">
+    <div class="main-wrapper z-depth-1">
+        <div class="row">
+            <div class="page-title">
+                <span class="inline-title">Audition</span>
+                <button class="btn waves-effect waves-light red right" type="button" name="action" id="btnAddauditionContent">
+                    Add
+                </button>
+                @* <a class="waves-effect waves-light btn modal-trigger red right" href="#manageAuditionContent">Add</a>*@
+
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="pages-wrapp">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="lead-wrapp">
+                            <div class="head-section actions-blk">
+                                <div class="row remove-margin">
+                                    <div class=" col s12">
+                                        <div class="row">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-section">
+                                <div>
+                                    <table id="allContentCategories" class="table bordered striped hover centered responsive-table custom-data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+
+
+
+
+                                                    <input id="txtCity" placeholder="City" type="text" class="validate filter">
+                                                </th>
+                                                <th>
+                                                    <input id="txtDate" placeholder="Date" type="text" class="validate filter">
+                                                </th>
+                                                <th>
+                                                    <input id="txtVenue" placeholder="Venue" type="text" class="validate filter">
+                                                </th>
+                                                <th>
+                                                    <input id="txtDay" placeholder="Day" type="text" class="validate filter">
+                                                </th>
+                                                <th>
+                                                    <select id="drpStatus" class="filter">
+                                                        <option value="" selected>Status</option>
+                                                        <option value="1">Active</option>
+                                                        <option value="0">Inactive</option>
+                                                    </select>
+                                                </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="footer-section">
+                                <div class="row ">
+                                    <div class="col s12  m6 left ">
+                                        <div class="pagesize">
+                                            <select id="drpPageSize" class="filter">
+                                                <option value="25" selected>25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </div>
+                                        <div class="pagesizeandno">
+                                            <label id="spnTotalReords" for="spnTotalReords"></label>
+                                            <label id="spnTotalPages" for="spnTotalPages"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 right" style="text-align:right;">
+                                        <ul class="pagination" id="ulPagination"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="manageAuditionContent" class="modal">
+    <div class="modal-content">
+
+        <div class=" col s12">
+            <h5 id="userContentType">Add Audition</h5>
+        </div>
+        @using (Html.BeginForm("Modify", "Audition", FormMethod.Post, new { @id = "manageAuditionContent" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="input-field col s12">
+                    @Html.HiddenFor(m => m.AuditionId)
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="input-field col s4">
+                    @Html.LabelFor(m => m.City, "City")
+                    @Html.DropDownListFor(m => m.CityId, new SelectList(ViewBag.City, "CityId", "City"), "Select City")
+                    <span class="errorCityId"></span>
+                </div>
+
+                <div class="input-field col s4">
+                    @Html.LabelFor(m => m.Venue, "Venue")
+                    @Html.TextAreaFor(m => m.Venue)
+                    <span class="errorVenue"></span>
+                </div>
+
+                <div class="input-field col s4">
+                    @Html.LabelFor(m => m.Day, "Day")
+                    @Html.TextBoxFor(m => m.Day)
+                    <span class="errorDay"></span>
+                </div>
+
+            </div>
+
+            <div class="row address-type">
+
+                <div class="input-field col s4">
+                    @Html.LabelFor(m => m.PlaceId, "PlaceId")
+                    @Html.TextBoxFor(m => m.PlaceId)
+                    @*    <span class="errorPlaceId"></span>*@
+                </div>
+
+                <div class="input-field col s4">
+                    @Html.LabelFor(m => m.Date, "Date")
+                    @Html.TextBoxFor(m => m.Date)
+                    <span class="errorDate"></span>
+                </div>
+
+
+                <div class="input-field col s4">
+                    @Html.DropDownListFor(m => m.IsActive, new List<SelectListItem> {
+                        new SelectListItem { Value = "" , Text = "Select Status" },
+                        new SelectListItem { Value = "true" , Text = "Active" },
+                        new SelectListItem { Value = "false" , Text = "DeActive" }
+                     })
+
+                    <span class="errorIsActive"></span>
+                </div>
+
+            </div>
+
+            <div class="row address-type">
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light red " type="button" name="action" id="btnAdduser">
+                        Submit
+                    </button>
+
+                    @* <input type="Submit" class="btn waves-effect waves-light red " />*@
+                </div>
+            </div>
+        }
+    </div>
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat  close-btn " id="btnCloseManageLocationContent">X</a>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('select').material_select();
+        $('.modal').modal();
+        auditionDataTableHandlers.init();
+        auditionContentManager.init();
+    });
+</script>

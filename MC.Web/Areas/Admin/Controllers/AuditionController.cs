@@ -33,7 +33,7 @@ namespace MC.Web.Areas.Admin.Controllers
             catch (Exception ex)
             {
 
-                LogService.Log(ex.Message);
+                LogService.Log("Exception Message: "+ex.Message);
                 return RedirectToAction("Index", "Error");
             }
 

@@ -12,3 +12,5 @@ C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.DataAcces
 C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Entities.dll
 C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.DataAccess.pdb
 C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Entities.pdb
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Logging.dll
+C:\Users\Rahul\source\repos\MasterChef6\MC.BusinessAccess\bin\Debug\MC.Logging.pdb

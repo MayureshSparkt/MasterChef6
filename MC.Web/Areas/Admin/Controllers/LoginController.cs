@@ -1,5 +1,6 @@
 ﻿using MC.BusinessAccess.Interface;
 using MC.Entities;
+using MC.Logging;
 using MC.Web.Core;
 using Newtonsoft.Json;
 using System;
@@ -27,7 +28,7 @@ namespace MC.Web.Areas.Admin.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+             return View();
         }
 
         #region HTTP POST

@@ -9,3 +9,14 @@ C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.Entities.pdb
 C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csproj.CopyComplete
 C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.Logging.dll
 C:\Users\Rahul\source\repos\MasterChef6\MC.DataAccess\bin\Debug\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.DataAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.DataAccess.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.Entities.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.Logging.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.Entities.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Debug\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csprojAssemblyReference.cache
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.csproj.CopyComplete
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Debug\MC.DataAccess.pdb

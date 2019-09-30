@@ -1,31 +1,197 @@
-﻿@{
+﻿@model MC.Web.Models.HomeViewModel
+
+@{
     ViewBag.Title = "Home Page";
+    Layout = null;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileImage" content="~/Content/images/favicon/ms-icon-144x144.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon/ms-icon-144x144.png">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <title>Homepage</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/Plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/reset.css">
+    <script src="~/Scripts/Custom/HomeManager.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22802170-22"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('js', new Date());
+
+
+
+        gtag('config', 'UA-22802170-22');
+
+    </script>
+
+
+
+    <style>
+        ul.points {
+            color: #FFF;
+            font-size: 20px;
+            margin-left: 2rem;
+            margin-right: 4rem;
+            margin-top: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse nav" id="navbarNav">
+                        <ul class="navbar-nav mr-lg-0 ml-lg-auto nav-pills">
+                            <li class="nav-item active"> <a class="btn btn-outline-drak btn-lg mr-1 ml-1 nav-link" href="#home">Home</a> </li>
+                            <li class="nav-item active"> <a class="btn btn-outline-drak btn-lg mr-1 ml-1 nav-link" href="#the-show">The Show</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="section">
+            <img src="~/Content/images/masterchef_hero--banner.jpg" alt="" class="img-fluid">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/StarPlus" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/StarPlus" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/starplus/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="section audition-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-title"><span>Audition Details</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <h3 class="blog-title">Auditions open for participants:</h3>
+                        <div class="blog-point">
+                            <ul class="points">
+                                <li>Age: 18 years and above.</li>
+                                <li>Nationality: Indian National. </li>
+                                <li>Carry Valid Government ID proof for auditions.</li>
+                                <li>Carry 2 photographs for auditions.</li>
+                            </ul>
+
+                        </div>
+                        @*<h3 class="blog-title">Entry Categories</h3>
+                            <div class="blow-img-solo">
+                                <img src="~/Content/images/solo.png" alt="solo icon">
+                                <p class="blog-content">Solo</p>
+                            </div>
+                            <div class="blow-img">
+                                <img src="~/Content/images/duo.png" alt="solo icon">
+                                <p class="blog-content">Duo</p>
+                            </div>
+                            <div class="blow-img">
+                                <img src="~/Content/images/group.png" alt="solo icon">
+                                <p class="blog-content">Group</p>
+                            </div>*@
+                    </div>
+
+
+
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <h3 class="blog-title">On-ground Audition Cities</h3>
+                        <form>
+                            @Html.DropDownListFor(m => m.CityId, new SelectList(ViewBag.City, "CityId", "City"), new { @class = "custom-select form-dropdown", @id = "inlineFormCustomSelect" })
+                        </form>
+                        <div id="refLocationVenue">
+                            @Html.Partial("_AuditionDayLocation", Model.AuditionList)
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                                <h1 class="section-title show" id="the-show"><span>The Show</span></h1>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-12">
+
+                                    <div class="video-grid-wrapp">
+
+                                        <div class="video-grid">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fyOlr_A72N4?rel=0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="content-grid">
+                                            <div class="content">
+                                                <h3>MasterChef India, the most coveted cooking show of the country is back with season 6! </h3>
+                                                <p>
+                                                    The journey to explore desh ka swaad with amalgamation of passion by home cooks is going to begin. MasterChef India is set to embark on its sixth season to seek India's best amateur home-cooks.
+
+
+
+                                                    Home-cooks hailing from far-flung parts of India who will bring their very own cultural taste to the heart of the show, by showcasing their culinary skills through rooted regional and global dishes by adding a personal touch.
+
+
+
+                                                    India, a treasure chest of spices and flavours will be brought to life through this tasteful journey led by India's eminent chefs.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">Copyright 2019  Star India Pvt. Ltd. All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @*<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>*@
+
+    <script type="text/javascript" src="~/Content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/77976886c0.js"></script>
+    <script>
+
+        $(".navbar-light .navbar-nav .nav-link").on("click", function () {
+
+            $(".navbar-collapse").removeClass("show");
+
+        })
+    </script>
+</body>
+</html>

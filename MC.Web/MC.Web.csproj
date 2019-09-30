@@ -138,6 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +193,19 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\fonts\calibri-bold.svg" />
+    <Content Include="Content\css\fonts\calibri.svg" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-bold-demo.html" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-book-demo.html" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-demi-demo.html" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-light-demo.html" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-medium-demo.html" />
+    <Content Include="Content\css\newindia.css" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\banner-img.jpeg" />
+    <Content Include="Content\images\banner-img.png" />
+    <Content Include="Content\images\duo.png" />
     <Content Include="Content\images\favicon\android-icon-144x144.png" />
     <Content Include="Content\images\favicon\android-icon-192x192.png" />
     <Content Include="Content\images\favicon\android-icon-36x36.png" />
@@ -218,6 +232,13 @@
     <Content Include="Content\images\favicon\ms-icon-150x150.png" />
     <Content Include="Content\images\favicon\ms-icon-310x310.png" />
     <Content Include="Content\images\favicon\ms-icon-70x70.png" />
+    <Content Include="Content\images\group.png" />
+    <Content Include="Content\images\masterchef-bg.jpg" />
+    <Content Include="Content\images\masterchef_hero--banner.jpg" />
+    <Content Include="Content\images\sec-bg.jpg" />
+    <Content Include="Content\images\solo.png" />
+    <Content Include="Content\images\sparkt.png" />
+    <Content Include="Content\js\jquery-3.2.1.min.js" />
     <Content Include="Content\Plugins\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\Plugins\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="favicon.ico" />
@@ -237,7 +258,29 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminMenus.cshtml" />
     <Content Include="Areas\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Content\css\fonts\.DS_Store" />
+    <Content Include="Content\css\fonts\calibri-bold.eot" />
+    <Content Include="Content\css\fonts\Calibri-Bold.ttf" />
+    <Content Include="Content\css\fonts\calibri-bold.woff" />
+    <Content Include="Content\css\fonts\Calibri-Bold.woff2" />
+    <Content Include="Content\css\fonts\calibri.eot" />
+    <Content Include="Content\css\fonts\Calibri.ttf" />
+    <Content Include="Content\css\fonts\calibri.woff" />
+    <Content Include="Content\css\fonts\Calibri.woff2" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-bold-webfont.woff" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-bold-webfont.woff2" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-book-webfont.ttf" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-book-webfont.woff" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-book-webfont.woff2" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-demi-webfont.woff" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-demi-webfont.woff2" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-light-webfont.woff" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-light-webfont.woff2" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-medium-webfont.woff" />
+    <Content Include="Content\css\fonts\kohinoordevanagari-medium-webfont.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Custom\HomeManager.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -266,10 +309,10 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Error\PageNotFound.cshtml" />
     <Content Include="Views\Error\ServiceNotAvailable.cshtml" />
+    <Content Include="Views\Shared\_AuditionDayLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MC.Web.Areas.Admin.Models
+namespace MC.Web.Areas.TWFzdGVyQ2hlZg.Models
 {
     public class AuditionViewModel
     {

@@ -88,7 +88,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "/Admin/Audition/Modify",
+                    url: "/TWFzdGVyQ2hlZg/Audition/Modify",
                     data: Data,
                     dataType: 'json',
                     success: function (data) {
@@ -158,7 +158,7 @@
 
         $.ajax({
             type: "POST",
-            url: "/Admin/Audition/GetAuditionById",
+            url: "/TWFzdGVyQ2hlZg/Audition/GetAuditionById",
             data: { auditionId: id },
             success: function (data) {
                 if (data.StatusCode !== undefined) {
@@ -210,7 +210,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "/Admin/Audition/DeleteAudition",
+                url: "/TWFzdGVyQ2hlZg/Audition/DeleteAudition",
                 data: { articleId: id },
                 success: function (data) {
                     if (data.StatusCode !== undefined) {
@@ -339,7 +339,7 @@ var auditionDataTableHandlers = function () {
     that.FetchauditionContents = function (vFltData) {
         $.ajax({
             type: "POST",
-            url: "/Admin/audition/GetAudditionContent",
+            url: "/TWFzdGVyQ2hlZg/audition/GetAudditionContent",
             data: JSON.stringify({ 'FilterData': vFltData, 'currentPage': currentPage, 'pageSize': pageSize }),
             dataType: "json",
             traditional: true,

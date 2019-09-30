@@ -10,11 +10,11 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace MC.Web.Areas.Admin.Controllers
+namespace MC.Web.Areas.TWFzdGVyQ2hlZg.Controllers
 {
     public class LoginController : Controller
     {
-        // GET: Admin/Login
+        // GET: TWFzdGVyQ2hlZg/Login
         private readonly IAdminUserBusinessAccess _userService;
 
 
@@ -56,7 +56,7 @@ namespace MC.Web.Areas.Admin.Controllers
                                 UserName = user.UserName,
                                 FirstName = "",
                                 LastName = "",
-                                roles = new string[] { "Admin" }
+                                roles = new string[] { "TWFzdGVyQ2hlZg" }
                             };
                             Session["UserId"] = user.UserId;
                             Session["UserRoleId"] = user.UserRoleId;
@@ -68,7 +68,7 @@ namespace MC.Web.Areas.Admin.Controllers
 
                             Response.Cookies.Add(faCookie);
 
-                            return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+                            return RedirectToAction("Index", "Dashboard", new { area = "TWFzdGVyQ2hlZg" });
                         }
                     }
                     ModelState.AddModelError("Password", "Incorrect username and/or password");

@@ -23,9 +23,9 @@ namespace MC.Web
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/admincss").Include(
-                      "~/Content/Admin/css/reset.css",
-                      "~/Content/Admin/css/materialize.min.css",
-                       "~/Content/Admin/css/style.css"));
+                      "~/Content/TWFzdGVyQ2hlZg/css/reset.css",
+                      "~/Content/TWFzdGVyQ2hlZg/css/materialize.min.css",
+                       "~/Content/TWFzdGVyQ2hlZg/css/style.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

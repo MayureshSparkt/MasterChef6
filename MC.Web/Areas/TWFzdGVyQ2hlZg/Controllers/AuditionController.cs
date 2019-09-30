@@ -1,14 +1,14 @@
 ﻿using MC.BusinessAccess.Interface;
 using MC.Entities;
 using MC.Logging;
-using MC.Web.Areas.Admin.Models;
+using MC.Web.Areas.TWFzdGVyQ2hlZg.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MC.Web.Areas.Admin.Controllers
+namespace MC.Web.Areas.TWFzdGVyQ2hlZg.Controllers
 {
     public class AuditionController : Controller
     {
@@ -22,7 +22,7 @@ namespace MC.Web.Areas.Admin.Controllers
         }
 
 
-        // GET: Admin/Audition
+        // GET: TWFzdGVyQ2hlZg/Audition
         public ActionResult Index()
         {
             try

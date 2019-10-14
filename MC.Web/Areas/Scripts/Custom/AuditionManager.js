@@ -211,7 +211,7 @@
             $.ajax({
                 type: "POST",
                 url: "/TWFzdGVyQ2hlZg/Audition/DeleteAudition",
-                data: { articleId: id },
+                data: { auditionId: id },
                 success: function (data) {
                     if (data.StatusCode !== undefined) {
                         commonHelper.showHideLoader(false);
@@ -221,7 +221,8 @@
                     if (data.Status) {
                         alert(data.Message);
                         commonHelper.showHideLoader(false);
-                        articleDataTableHandlers.FetchArticles('');
+                        location.reload();
+
                     }
                     else {
                         alert(data.Message);

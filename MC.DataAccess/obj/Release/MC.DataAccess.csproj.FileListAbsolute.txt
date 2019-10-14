@@ -1,0 +1,11 @@
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.DataAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.DataAccess.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.Entities.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.Logging.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.Entities.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\bin\Release\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Release\MC.DataAccess.csprojAssemblyReference.cache
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Release\MC.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Release\MC.DataAccess.csproj.CopyComplete
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Release\MC.DataAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.DataAccess\obj\Release\MC.DataAccess.pdb

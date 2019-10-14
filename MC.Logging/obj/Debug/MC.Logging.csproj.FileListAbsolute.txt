@@ -4,3 +4,9 @@ C:\Users\Rahul\source\repos\MasterChef6\MC.Logging\obj\Debug\MC.Logging.csprojAs
 C:\Users\Rahul\source\repos\MasterChef6\MC.Logging\obj\Debug\MC.Logging.csproj.CoreCompileInputs.cache
 C:\Users\Rahul\source\repos\MasterChef6\MC.Logging\obj\Debug\MC.Logging.dll
 C:\Users\Rahul\source\repos\MasterChef6\MC.Logging\obj\Debug\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\bin\Debug\MC.Logging.dll
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\bin\Debug\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\obj\Debug\MC.Logging.csprojAssemblyReference.cache
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\obj\Debug\MC.Logging.csproj.CoreCompileInputs.cache
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\obj\Debug\MC.Logging.dll
+C:\Projects\MasterChef6\MasterChef6\MC.Logging\obj\Debug\MC.Logging.pdb

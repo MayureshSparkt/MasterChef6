@@ -1,0 +1,16 @@
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.BusinessAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.BusinessAccess.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\Autofac.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.DataAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.Entities.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.Logging.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.DataAccess.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.Entities.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\MC.Logging.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\Autofac.pdb
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\bin\Release\Autofac.xml
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\obj\Release\MC.BusinessAccess.csprojAssemblyReference.cache
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\obj\Release\MC.BusinessAccess.csproj.CoreCompileInputs.cache
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\obj\Release\MC.BusinessAccess.csproj.CopyComplete
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\obj\Release\MC.BusinessAccess.dll
+C:\Projects\MasterChef6\MasterChef6\MC.BusinessAccess\obj\Release\MC.BusinessAccess.pdb

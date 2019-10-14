@@ -1,0 +1,55 @@
+﻿@model List<MC.Entities.AuditionModel>
+
+
+@foreach (var item in Model)
+{
+    <div class="blog-dropmenu">
+        <p>@item.Day</p>
+        <div class="inner-wrap">
+            <p>@Html.Raw(item.Date)</p>
+        </div>
+    </div>
+    <div class="blog-dropmenu">
+        <p>Venue:</p>
+        <div class="inner-wrap">
+            <p>
+                @item.Venue
+            </p>
+        </div>
+    </div>
+    @*<div class="map" >
+            <iframe width="600" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBxytOol10oIjBVDylUxgysdc9o3uHpLI0&q=place_id:@item.PlaceId"></iframe>
+
+
+            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/de/">Embedgooglemaps.com/de/</a> & <a href="https://custommapposter.com">www.custommapposter.com</a></small></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }
+            </style>
+        </div>*@
+    if (!string.IsNullOrEmpty(@item.PlaceId))
+    {
+        <div class="map">
+            <iframe style="width:100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBxytOol10oIjBVDylUxgysdc9o3uHpLI0&q=place_id:@item.PlaceId"></iframe>
+
+
+            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/de/">Embedgooglemaps.com/de/</a> & <a href="https://custommapposter.com">www.custommapposter.com</a></small></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }
+            </style>
+        </div>
+    }
+
+    <br />
+    <div class="disclemare">
+        Please refer to the <a href="https://www.startv.com/legal-terms-policies/#MIS6" target="_blank">Terms & Conditions</a>
+        of on-ground auditions for eligibility criteria
+    </div>
+
+}
+
